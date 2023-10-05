@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+</head>
+
+<body>
+    <h1>Operadores Lógicos</h1>
+    <script>
+        var a = false && false; //(E) a = false
+        var b = true && false; //(E) b = false
+        var c = true && true; //(E) c = true
+        var d = false || false; //(OU) c = false
+        var e = true || false; //(OU) d = true
+        var f = true || true; // (OU) e = true
+        // MAIS EXEMPLOS
+        var a = 2 > 1 && 2 > 3; //(E) a = false
+        var b = 2 > 1 && 3 > 2; //(E) b = true
+        var c = 1 > 2 || 2 > 3; //(OU) c = false
+        var d = 2 > 1 || 3 > 2; //(OU) d = true
+        // MAIS EXEMPLOS
+        var e = !(2 > 1); //(NÃO) e = false (o NÃO, "!" inverte o valor booleano)
+    </script>
+    <p> A prioridade dos operadores aritméticos é: 
+        1. Parênteses <br>
+       
+       2. Multiplicação/Divisão/Módulo
+       <br>
+       3. Soma/Subtração
+       <br>
+       ● A prioridade dos operadores relacionais é:
+       <br>
+       1. Parênteses
+       <br>
+       2. Maior/Maior ou Igual/Menor/Menor ou Igual
+       <br>
+       3. Igual/Diferente
+       <br>
+       ● A prioridade dos operadores lógicos é:
+       <br>
+       1. Parênteses
+       <br>
+       2. NOT (não)
+       <br>
+       3. AND (e)
+       <br>
+       4. OR (ou)</p>
+</body>
+
+</html>
