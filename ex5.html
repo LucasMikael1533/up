@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Validador de senha</title>
+</head>
+<body>
+  <h1>Digite uma senha de 4 dígitos</h1>
+  <input type="password" id="senha">
+  <button onclick="validarSenha()">Validar senha</button>
+  <script>
+    function validarSenha() {
+      // Obtém a senha digitada pelo usuário
+      var senha = document.getElementById("senha").value;
+      // Verifica se a senha tem 4 dígitos
+      if (senha.length != 4) {
+        alert("A senha deve ter 4 dígitos");
+        return;
+      }
+      // Verifica se todos os dígitos são maiores que 0
+      for (var i = 0; i < senha.length; i++) {
+        if (parseInt(senha[i]) <= 0) {
+          alert("Todos os dígitos da senha devem ser maiores que 0");
+          return;
+        }
+      }
+      // Se todos os requisitos forem atendidos, exibe uma mensagem de sucesso
+      alert("Senha válida");
+    }
+  </script>
+</body>
+</html>

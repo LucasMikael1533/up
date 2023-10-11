@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ex.4</title>
 </head>
+
 <body>
     <script>
-        a = prompt  ("Quant.Comp.A")
-        b = prompt  ("Quant.Comp.B")
-        c = prompt  ("Quant.Comp.C")
+        //ENTRADA
+        var a = prompt('Qtde de componentes A:');
+        //ENTRADA
+        var b = prompt('Qtde de componentes B:');
+        //ENTRADA
+        var c = prompt('Qtde de componentes C:');
 
-        
-        a >=2
-        b >=3
-        c >=7
+        //MAXIMO DE PLACAS FEITAS PELO COMP_A
+        var placasA = a / 2;
+        //MAXIMO DE PLACAS FEITAS PELO COMP_B
+        var placasB = b / 3;
+        //MAXIMO DE PLACAS FEITAS PELO COMP_C
+        var placasC = c / 7;
 
-        
-        a + b + c === 12
-        12/
-        alert ("1")
+        //DEFINE VARIAVEL MAXIMO
+        var maximo = placasA;
 
-        
-
-
-
-
+        //SE VALOR PLACAS_A/ FOR MAIOR
+        //COMPARA QUAL SERÁ MENOR VALOR!!
+        if (placasB < maximo) {
+            maximo = placasB;
+        }
+        if (placasC < maximo) {
+            maximo = placasC;
+        }
+        alert(maximo);
+        //COMPARA QUAL SERÁ MENOR VALOR!!
     </script>
 </body>
+
 </html>
